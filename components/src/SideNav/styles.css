@@ -38,17 +38,25 @@
   }
   
   .toolbar__navigation-items li {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
+  }
+  .toolbar__navigation-items li:nth-child(1) {
+    border-left: 1px dotted white;
+  }
+  .toolbar__navigation-items li:nth-child(n + 1) {
+    border-right: 1px dotted white;
   }
   
   .toolbar__navigation-items a {
     color: white;
     text-decoration: none;
+    font-size: 2rem;
   }
   
   .toolbar__navigation-items a:hover,
   .toolbar__navigation-items a:active {
     color: orange;
+    text-decoration: underline darkgoldenrod;
   }
   
   .toggle-button {
@@ -89,16 +97,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
   }
   
   .side-drawer li {
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
+    padding-top: 1em;
+    height: 3em;
+    border-bottom: 1px solid darkslategray;
+  }
+
+  .side-drawer li:hover {
+    /* margin: 0.5rem 0; */
+    padding-top: 1em;
+    height: 3em;
+    background: darkslategray;
+    color: white;
+  }
+  .side-drawer li:hover a {
+    color: white;
   }
   
   .side-drawer a {
     color: #521751;
     text-decoration: none;
     font-size: 1.2rem;
+    padding-left: 3em;
   }
   
   .backdrop {
