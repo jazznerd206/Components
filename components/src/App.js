@@ -1,5 +1,8 @@
 import './App.css';
+import ParaLanding from './ParaLanding/ParaLanding.js';
 import SideNav from './SideNav/SideNav.js';
+import StackView from './StackViewer/StackView.js';
+import DragDrop from './DragDrop/DragDrop.js';
 
 
 const Content = () => {
@@ -13,9 +16,13 @@ const Content = () => {
 
 function App() {
   return (
-    <div className="App">
-      <SideNav />
-      {/* <Content /> */}
+    <div 
+      className="App" 
+    >
+      <ParaLanding />
+      {/* <SideNav /> */}
+      {/* <StackView /> */}
+      {/* <DragDrop /> */}
     </div>
   );
 }
