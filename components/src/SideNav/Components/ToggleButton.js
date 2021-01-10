@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DrawerToggleButton(props) {
+function PanelToggleButton(props) {
     return(
         <button className="toggle-button" onClick={props.click}>
             <i className="fas  fa-chevron-circle-right fa-3x"></i>
@@ -8,4 +8,4 @@ function DrawerToggleButton(props) {
     )
 };
 
-export default DrawerToggleButton;
+export default PanelToggleButton;

@@ -5,20 +5,17 @@ import Background from './Components/Background.js';
 import './styles.css'
 
 function SideNav() {
+  
     const [ reveal, setReveal ] = useState(false);
   
     const toggle = () => {
       setReveal(!reveal);
     };
   
-    const outsidePanelClick = () => {
-      setReveal(!reveal);
-    };
-
     let background;
     
     if (reveal) {
-      background = <Background click={outsidePanelClick} />;
+      background = <Background click={toggle} />;
     }
     
     return (

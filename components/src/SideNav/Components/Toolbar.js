@@ -8,12 +8,12 @@ function Toolbar(props) {
         <div>
           <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
-        <div className="toolbar__logo"><a href="/">LOGO</a></div>
+        <div className="toolbar__logo"><a href="/">TOP BAR</a></div>
         <div className="spacer" />
         <div className="toolbar__navigation-items">
           <ul>
-            <li><a href="/">Products</a></li>
-            <li><a href="/">Users</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Login</a></li>
           </ul>
         </div>
       </nav>
