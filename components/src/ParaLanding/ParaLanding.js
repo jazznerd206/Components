@@ -64,9 +64,9 @@ function ParaLanding() {
             </div>    
             <div className="container secondpage" id="secondpage">
                 <h1 className="heading" id="heading">
-                    <span>Andrew</span>
-                    <span>Miller</span>
-                    <p>random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random random </p>
+                    <span>I am a full stack web developer with a passion for modern and emerging web technologies. I believe in delivering meaningful, impactful technology paired with simple, clean code.</span>
+                    <span>I am always seeking opportunities and challenges to improve myself and assist and ally with others to approach real world problems with innovative solutions. I love to contribute to open source projects, and am currently on the hunt for a full time job.</span>
+                    <span>While I'm not looking for the hottest new NPM package, I love to spend time with my dogs (3!!) and sharpen my golf game.</span>
                 </h1>
                 <img
                     src={GolfBall}
@@ -76,10 +76,6 @@ function ParaLanding() {
             </div>
             <div className="thirdpage">
                 <div className="progress-line">
-                </div>
-
-                <div className="title">
-                    <h2>wELcOme</h2>
                 </div>
 
                 <div className="imgs">

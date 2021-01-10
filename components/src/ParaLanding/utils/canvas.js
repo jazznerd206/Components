@@ -16,13 +16,13 @@ export function draw(ctx){
     let x = 30;
     let i = 0;
 
-    ctx.strokeStyle = '#BADA55';
-    // ctx.fillStyle = 'red';
+    ctx.strokeStyle = '#a6cc2f';
+    ctx.fillStyle = 'rgb(78, 84, 57,.25)';
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
     ctx.lineWidth = 5;
     ctx.font = "50px Rock Salt"; 
-    // ctx.lineWidth = 15;
+    ctx.lineWidth = 5;
     ctx.lineJoin = "round";
     // ctx.globalAlpha = 2/3;
     // ctx.strokeStyle = ctx.fillStyle = "red";
