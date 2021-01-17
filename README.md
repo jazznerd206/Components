@@ -8,8 +8,8 @@
 
 <p align="center">
   <h3>Collapsible Side Navigation bar</h3>
-  <p>This componenet features a top bar with a logo and general navigation links and a panel that slides out from the left side of the screen on click. To close the panel, simply click anywhere outside the panel. The toggle to open the panel is located in the top left corner of the viewport.</p>
-  <img src=""></img>
+  <p>This component features a top bar with a logo and general navigation links and a panel that slides out from the left side of the screen on click. To close the panel, simply click anywhere outside the panel. The toggle to open the panel is located in the top left corner of the viewport.</p>
+  <img src="./components/src/public/Screen Recording 2021-01-17 at 9.13.49 AM.mov"></img>
 </p>
 <p align="center">
   <h3>Registration/Login Form</h3>
