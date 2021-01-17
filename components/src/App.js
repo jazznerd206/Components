@@ -1,4 +1,5 @@
 import './App.css';
+import Registration from './Auth/RegistrationForm.js'
 import ParaLanding from './ParaLanding/ParaLanding.js';
 import SideNav from './SideNav/SideNav.js';
 import StackView from './StackViewer/StackView.js';
@@ -19,7 +20,8 @@ function App() {
     <div 
       className="App" 
     >
-      <ParaLanding />
+      <Registration />
+      {/* <ParaLanding /> */}
       {/* <SideNav /> */}
       {/* <StackView /> */}
       {/* <DragDrop /> */}

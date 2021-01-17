@@ -7,20 +7,24 @@ import React, {useState} from 'react';
 // completion for submit to API.registerUser
 // 
 
-const [state , setState] = useState({
-    email : "",
-    password : ""
-})
-const handleChange = (e) => {
-    const {id , value} = e.target   
-    setState(prevState => ({
-        ...prevState,
-        [id] : value
-    }))
-}
+
 
 function RegistrationForm(props) {
-  return(
+
+    const [state , setState] = useState({
+        email : "",
+        password : ""
+    })
+    const handleChange = (e) => {
+        const {id , value} = e.target   
+        setState(prevState => ({
+            ...prevState,
+            [id] : value
+        }))
+    }
+
+
+    return (
         <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
             <form>
                 <div className="form-group text-left">
@@ -58,7 +62,7 @@ function RegistrationForm(props) {
                 <button 
                     type="submit" 
                     className="btn btn-primary"
-                    onClick={handleSubmitClick}
+                    // onClick={handleSubmitClick}
                 >
                     Register
                 </button>
@@ -66,3 +70,5 @@ function RegistrationForm(props) {
         </div>
     )
 }
+
+export default RegistrationForm;
