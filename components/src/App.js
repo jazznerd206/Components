@@ -11,6 +11,7 @@ import FileDrop from './FileDrops/FileFunc.js';
 import MultiSelectCheckBox from './MultiSelectCheckBox/MultiSelectCheckBox.js';
 import Carousel from './Carousel/Carousel.js';
 import DataList from './DataList/DataList.js';
+import Collapse from './Collapse/Collapse.js';
 
 // ===================================================
 // loader element
@@ -79,7 +80,11 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <DataList data={names} />
+      <Collapse>
+        <h1>Hello world</h1>
+        <p>Oye mundo.</p>
+      </Collapse>
+      {/* <DataList data={names} /> */}
       {/* <Carousel carouselItems={carouselItems}/> */}
       {/* <FileDrop handleDrop={console.log}/> */}
       {/* <CustomModal  /> */}
