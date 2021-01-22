@@ -7,10 +7,12 @@ import DragDrop from './DragDrop/DragDrop.js';
 import MappedTable from './MappedTable/MappedTable.js';
 import ColorShadow from './ColorShadow/ColorShadow.js';
 import CustomModal from './CustomModal/CustomModalF.js';
-
+import CustomModal from './CustomModal/CustomModalF.js';
+import FileDrop from '/FileDrops/FileFunc.js'
 import MultiSelectCheckBox from './MultiSelectCheckBox/MultiSelectCheckBox.js';
 
-
+// ===================================================
+// loader element
 const Content = () => {
   return (
       <div>
@@ -19,6 +21,9 @@ const Content = () => {
       </div>
     )
 }
+// ===================================================
+
+
 
 function App() {
 
@@ -38,6 +43,7 @@ function App() {
 
   // ==================================================
   // PROPS TO PASS TO CUSTOM MODAL
+  // INCOMPLETE
   const propsToModal = {
     title: 'Hello, world!',
     closeOnClick: true,
@@ -50,6 +56,13 @@ function App() {
         }
     }));
   }
+  // INCOMPLETE
+  // ===================================================
+
+  // ===================================================
+  // ===================================================
+  // ===================================================
+  // ===================================================
   // ===================================================
 
   return (
@@ -57,13 +70,13 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <CustomModal  />
+      {/* <CustomModal  /> */}
       {/* <Registration /> */}
       {/* <ParaLanding /> */}
       {/* <MappedTable data={people} propertyNames={propertyNames}/> */}
-      <div onClick={show(propsToModal)}>
+      {/* <div onClick={show(propsToModal)}>
         <ColorShadow />
-      </div>
+      </div> */}
       {/* <MultiSelectCheckBox
         options={options}
         onChange={data => {
