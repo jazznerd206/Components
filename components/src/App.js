@@ -38,18 +38,18 @@ function App() {
   return (
     <div 
       className="App" 
-    >
+      >
+      <SideNav />
       {/* <Registration /> */}
       {/* <ParaLanding /> */}
-      <SideNav />
       {/* <MappedTable data={people} propertyNames={propertyNames}/> */}
       {/* <ColorShadow /> */}
-      <MultiSelectCheckBox
+      {/* <MultiSelectCheckBox
         options={options}
         onChange={data => {
           console.log(data);
         }}
-      />
+      /> */}
       {/* <StackView /> */}
       {/* <DragDrop /> */}
     </div>
