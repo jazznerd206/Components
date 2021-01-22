@@ -6,6 +6,7 @@ import StackView from './StackViewer/StackView.js';
 import DragDrop from './DragDrop/DragDrop.js';
 import MappedTable from './MappedTable/MappedTable.js';
 import ColorShadow from './ColorShadow/ColorShadow.js';
+import CustomModal from './CustomModal/CustomModalF.js';
 
 import MultiSelectCheckBox from './MultiSelectCheckBox/MultiSelectCheckBox.js';
 
@@ -35,15 +36,34 @@ function App() {
   const options = [{ label: 'Item One' }, { label: 'Item Two' }];
   // ==================================================
 
+  // ==================================================
+  // PROPS TO PASS TO CUSTOM MODAL
+  const propsToModal = {
+    title: 'Hello, world!',
+    closeOnClick: true,
+    content: <img src="https://github.com/30-seconds/30-seconds-of-react/blob/master/logo.png"/>
+  }
+  const show = (data) => {
+    document.dispatchEvent(new CustomEvent('modal', {
+        detail: {
+            data
+        }
+    }));
+  }
+  // ===================================================
+
   return (
     <div 
       className="App" 
       >
       <SideNav />
+      <CustomModal  />
       {/* <Registration /> */}
       {/* <ParaLanding /> */}
       {/* <MappedTable data={people} propertyNames={propertyNames}/> */}
-      {/* <ColorShadow /> */}
+      <div onClick={show(propsToModal)}>
+        <ColorShadow />
+      </div>
       {/* <MultiSelectCheckBox
         options={options}
         onChange={data => {
