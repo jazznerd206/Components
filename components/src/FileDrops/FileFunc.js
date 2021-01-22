@@ -7,7 +7,7 @@ function FileFunc(props) {
     let dragCounter = 0;
   
     const handleDrag = e => {
-      e.preventDefault();
+      e.preventDefault(); 
       e.stopPropagation();
     };
   
