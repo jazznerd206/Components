@@ -7,8 +7,9 @@ import DragDrop from './DragDrop/DragDrop.js';
 import MappedTable from './MappedTable/MappedTable.js';
 import ColorShadow from './ColorShadow/ColorShadow.js';
 import CustomModal from './CustomModal/CustomModalF.js';
-import FileDrop from './FileDrops/FileFunc.js'
+import FileDrop from './FileDrops/FileFunc.js';
 import MultiSelectCheckBox from './MultiSelectCheckBox/MultiSelectCheckBox.js';
+import Carousel from './Carousel/Carousel.js';
 
 // ===================================================
 // loader element
@@ -59,6 +60,12 @@ function App() {
   // ===================================================
 
   // ===================================================
+  // CAROUSEL PROPS
+  const carouselItems = [
+    <div>carousel item 1</div>,
+    <div>carousel item 2</div>,
+    <div>carousel item 3</div>
+  ];
   // ===================================================
   // ===================================================
   // ===================================================
@@ -69,7 +76,8 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <FileDrop handleDrop={console.log}/>
+      <Carousel carouselItems={carouselItems}/>
+      {/* <FileDrop handleDrop={console.log}/> */}
       {/* <CustomModal  /> */}
       {/* <Registration /> */}
       {/* <ParaLanding /> */}
