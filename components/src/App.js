@@ -5,6 +5,7 @@ import SideNav from './SideNav/SideNav.js';
 import StackView from './StackViewer/StackView.js';
 import DragDrop from './DragDrop/DragDrop.js';
 import MappedTable from './MappedTable/MappedTable.js';
+import ColorShadow from './ColorShadow/ColorShadow.js';
 
 
 const Content = () => {
@@ -32,6 +33,7 @@ function App() {
       {/* <ParaLanding /> */}
       <SideNav />
       <MappedTable data={people} propertyNames={propertyNames}/>
+      <ColorShadow />
       {/* <StackView /> */}
       {/* <DragDrop /> */}
     </div>
