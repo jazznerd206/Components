@@ -4,6 +4,7 @@ import ParaLanding from './ParaLanding/ParaLanding.js';
 import SideNav from './SideNav/SideNav.js';
 import StackView from './StackViewer/StackView.js';
 import DragDrop from './DragDrop/DragDrop.js';
+import MappedTable from './MappedTable/MappedTable.js';
 
 
 const Content = () => {
@@ -16,13 +17,21 @@ const Content = () => {
 }
 
 function App() {
+
+  const people = [
+    { name: 'John', surname: 'Smith', age: 42 },
+    { name: 'Adam', surname: 'Smith', gender: 'male' }
+  ];
+  const propertyNames = ['name', 'surname', 'age'];
+
   return (
     <div 
       className="App" 
     >
-      <Registration />
+      {/* <Registration /> */}
       {/* <ParaLanding /> */}
-      {/* <SideNav /> */}
+      <SideNav />
+      <MappedTable data={people} propertyNames={propertyNames}/>
       {/* <StackView /> */}
       {/* <DragDrop /> */}
     </div>
