@@ -7,7 +7,8 @@ function Carousel(props) {
     let scrollInterval = null;
     const style = {
       carousel: {
-        position: "relative"
+        position: "relative",
+        height: '50vh'
       },
       carouselItem: {
         position: "absolute",
@@ -16,8 +17,9 @@ function Carousel(props) {
         width: '250px',
         top: '50%',
         left: '50%',
-        // translate: 'transform(50%, 50%)',
-        background: 'black'
+        transform: 'translate(-50%, -50%)',
+        background: 'black',
+        color: 'white'
       },
       visible: {
         visibility: "visible"
