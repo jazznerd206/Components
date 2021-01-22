@@ -10,6 +10,7 @@ import CustomModal from './CustomModal/CustomModalF.js';
 import FileDrop from './FileDrops/FileFunc.js';
 import MultiSelectCheckBox from './MultiSelectCheckBox/MultiSelectCheckBox.js';
 import Carousel from './Carousel/Carousel.js';
+import DataList from './DataList/DataList.js';
 
 // ===================================================
 // loader element
@@ -68,6 +69,8 @@ function App() {
   ];
   // ===================================================
   // ===================================================
+  // PASSWORD REVEALER
+  const names = ['John', 'Paul', 'Mary'];
   // ===================================================
   // ===================================================
 
@@ -76,7 +79,8 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <Carousel carouselItems={carouselItems}/>
+      <DataList data={names} />
+      {/* <Carousel carouselItems={carouselItems}/> */}
       {/* <FileDrop handleDrop={console.log}/> */}
       {/* <CustomModal  /> */}
       {/* <Registration /> */}
