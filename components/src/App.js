@@ -7,6 +7,8 @@ import DragDrop from './DragDrop/DragDrop.js';
 import MappedTable from './MappedTable/MappedTable.js';
 import ColorShadow from './ColorShadow/ColorShadow.js';
 
+import MultiSelectCheckBox from './MultiSelectCheckBox/MultiSelectCheckBox.js';
+
 
 const Content = () => {
   return (
@@ -19,11 +21,19 @@ const Content = () => {
 
 function App() {
 
+  // ==================================================
+  // PROPS TO PASS TO MAPPED TABLE COMPONENT
   const people = [
     { name: 'John', surname: 'Smith', age: 42 },
     { name: 'Adam', surname: 'Smith', gender: 'male' }
   ];
   const propertyNames = ['name', 'surname', 'age'];
+  // ==================================================
+
+  // ==================================================
+  // PROPS TO PASS TO MULTI SELECT CHECK BOX
+  const options = [{ label: 'Item One' }, { label: 'Item Two' }];
+  // ==================================================
 
   return (
     <div 
@@ -32,8 +42,14 @@ function App() {
       {/* <Registration /> */}
       {/* <ParaLanding /> */}
       <SideNav />
-      <MappedTable data={people} propertyNames={propertyNames}/>
-      <ColorShadow />
+      {/* <MappedTable data={people} propertyNames={propertyNames}/> */}
+      {/* <ColorShadow /> */}
+      <MultiSelectCheckBox
+        options={options}
+        onChange={data => {
+          console.log(data);
+        }}
+      />
       {/* <StackView /> */}
       {/* <DragDrop /> */}
     </div>
