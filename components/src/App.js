@@ -13,6 +13,8 @@ import Carousel from './Carousel/Carousel.js';
 import DataList from './DataList/DataList.js';
 import Collapse from './Collapse/Collapse.js';
 
+import TreeView from './TreeView/TreeView.js';
+
 // ===================================================
 // loader element
 const Content = () => {
@@ -73,17 +75,42 @@ function App() {
   // PASSWORD REVEALER
   const names = ['John', 'Paul', 'Mary'];
   // ===================================================
+
   // ===================================================
+  // TREE VIEW DATA PROPS
+  let treeData = {
+    lorem: {
+      ipsum: "dolor sit",
+      amet: {
+        consectetur: "adipiscing",
+        elit: [
+          "duis",
+          "vitae",
+          {
+            semper: "orci"
+          },
+          {
+            est: "sed ornare"
+          },
+          "etiam",
+          ["laoreet", "tincidunt"],
+          ["vestibulum", "ante"]
+        ]
+      },
+      ipsum: "primis"
+    }
+  };
 
   return (
     <div 
       className="App" 
       >
       <SideNav />
-      <Collapse>
+      <TreeView data={treeData} name='data'/>
+      {/* <Collapse>
         <h1>Hello world</h1>
         <p>Oye mundo.</p>
-      </Collapse>
+      </Collapse> */}
       {/* <DataList data={names} /> */}
       {/* <Carousel carouselItems={carouselItems}/> */}
       {/* <FileDrop handleDrop={console.log}/> */}
