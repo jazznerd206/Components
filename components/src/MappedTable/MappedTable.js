@@ -6,7 +6,6 @@ function MappedTable({ data, propertyNames }) {
     const styles = {
         container: {
             textAlign: 'center',
-            background: 'red'
         },
         table: {
             margin: '0 auto',
@@ -15,6 +14,17 @@ function MappedTable({ data, propertyNames }) {
         },
         head: {
             fontSize: '2em',
+            textTransform: 'uppercase',
+            borderBottom: '.5px solid rgb(0,0,0,.25)'
+        },
+        body: {
+            backgroundColor: 'rgb(255,255,255,.5)',
+            verticalAlign: 'bottom'
+        },
+        row: {
+            height: '50px',
+        },
+        data: {
             fontVariant: 'small-caps'
         }
 
@@ -30,12 +40,12 @@ function MappedTable({ data, propertyNames }) {
         <div style={styles.container}>
             <table style={styles.table}>
                 <thead style={styles.head}>
-                    <tr>{propertyNames.map(val => <th key={`h_${val}`}>{val}</th>)}</tr>
+                    <tr style={styles.row}>{propertyNames.map(val => <th key={`h_${val}`}>{val}</th>)}</tr>
                 </thead>
-                <tbody>
+                <tbody style={styles.body}>
                     {filteredData.map((val, i) => (
-                    <tr key={`i_${i}`}>
-                        {propertyNames.map(p => <td key={`i_${i}_${p}`}>{val[p]}</td>)}
+                    <tr style={styles.row} key={`i_${i}`}>
+                        {propertyNames.map(p => <td style={styles.data} key={`i_${i}_${p}`}>{val[p]}</td>)}
                     </tr>
                     ))}
                 </tbody>
