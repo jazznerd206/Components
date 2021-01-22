@@ -1,6 +1,6 @@
 import React, {} from 'react'
 
-function FileDrop(props) {
+function FileFunc(props) {
     const [drag, setDrag] = React.useState(false);
     const [filename, setFilename] = React.useState('');
     let dropRef = React.createRef();
