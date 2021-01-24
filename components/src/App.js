@@ -106,7 +106,7 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <TreeView data={treeData} name='data'/>
+      {/* <TreeView data={treeData} name='data'/> */}
       {/* <Collapse>
         <h1>Hello world</h1>
         <p>Oye mundo.</p>
