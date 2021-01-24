@@ -1,0 +1,9 @@
+.dropdown-container {
+    font-variant: small-caps;
+    font-size: 1em;
+    transition: font-size .5s;
+}
+
+option {
+    font-size: 1.5em;
+}

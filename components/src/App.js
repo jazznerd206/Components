@@ -110,7 +110,8 @@ function App() {
     ['grapefruit', 'Grapefruit'],
     ['lime', 'Lime'],
     ['coconut', 'Coconut'],
-    ['mango', 'Mango']
+    ['mango', 'Mango'],
+    ['super long text value', 'Super Long Text Value']
   ];
   // ===================================================
 
@@ -120,7 +121,7 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <Select values={choices} selected='lime' callback={(val) => console.log(val)} />
+      <Select values={choices} selected='lime' callback={(val) => console.log('component ' + val)} />
       {/* <CountdownTimer seconds={10}/> */}
       {/* <TreeView data={treeData} name='data'/> */}
       {/* <Collapse>
