@@ -15,6 +15,7 @@ import Collapse from './Collapse/Collapse.js';
 import CountdownTimer from './CountdownTimer/CountdownTimer.js';
 import TreeView from './TreeView/TreeView.js';
 import Select from './Select/Select.js';
+import StarRating from './StarRating/StarRating';
 
 // ===================================================
 // loader element
@@ -115,13 +116,14 @@ function App() {
   ];
   // ===================================================
 
-
   return (
     <div 
       className="App" 
       >
       <SideNav />
-      <Select values={choices} selected='lime' callback={(val) => console.log('component ' + val)} />
+      <StarRating />
+      <StarRating rating={2} />
+      {/* <Select values={choices} selected='lime' callback={(val) => console.log('component ' + val)} /> */}
       {/* <CountdownTimer seconds={10}/> */}
       {/* <TreeView data={treeData} name='data'/> */}
       {/* <Collapse>
