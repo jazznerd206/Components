@@ -13,8 +13,8 @@ import Carousel from './Carousel/Carousel.js';
 import DataList from './DataList/DataList.js';
 import Collapse from './Collapse/Collapse.js';
 import CountdownTimer from './CountdownTimer/CountdownTimer.js';
-
 import TreeView from './TreeView/TreeView.js';
+import Select from './Select/Select.js';
 
 // ===================================================
 // loader element
@@ -101,13 +101,27 @@ function App() {
       ipsum: "primis"
     }
   };
+  // ===================================================
+
+
+  // ===================================================
+  // SELECT CHOICE PROPS
+  let choices = [
+    ['grapefruit', 'Grapefruit'],
+    ['lime', 'Lime'],
+    ['coconut', 'Coconut'],
+    ['mango', 'Mango']
+  ];
+  // ===================================================
+
 
   return (
     <div 
       className="App" 
       >
       <SideNav />
-      <CountdownTimer seconds={10}/>
+      <Select values={choices} selected='lime' callback={(val) => console.log(val)} />
+      {/* <CountdownTimer seconds={10}/> */}
       {/* <TreeView data={treeData} name='data'/> */}
       {/* <Collapse>
         <h1>Hello world</h1>
