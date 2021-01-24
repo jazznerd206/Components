@@ -25,7 +25,7 @@ function StarRating(props) {
             className="star-container"
             onMouseOut={() => hoverOver(null)}
             onClick={(event) =>
-                setRating(event.target.getAttribute("star-id") || this.state.rating)
+                setRating(event.target.getAttribute("star-id") || props.rating)
         }
         onMouseOver={hoverOver}
         >
