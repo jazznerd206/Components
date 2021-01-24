@@ -12,6 +12,7 @@ import MultiSelectCheckBox from './MultiSelectCheckBox/MultiSelectCheckBox.js';
 import Carousel from './Carousel/Carousel.js';
 import DataList from './DataList/DataList.js';
 import Collapse from './Collapse/Collapse.js';
+import CountdownTimer from './CountdownTimer/CountdownTimer.js';
 
 import TreeView from './TreeView/TreeView.js';
 
@@ -106,6 +107,7 @@ function App() {
       className="App" 
       >
       <SideNav />
+      <CountdownTimer seconds={10}/>
       {/* <TreeView data={treeData} name='data'/> */}
       {/* <Collapse>
         <h1>Hello world</h1>
