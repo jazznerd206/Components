@@ -17,6 +17,7 @@ import TreeView from './TreeView/TreeView.js';
 import Select from './Select/Select.js';
 import StarRating from './StarRating/StarRating';
 
+
 // ===================================================
 // loader element
 const Content = () => {
@@ -121,8 +122,9 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <StarRating />
-      <StarRating rating={2} />
+      <Input type='text' placeholder='Insert some text here...' callback={(val) => console.log(val)}/>
+      {/* <StarRating /> */}
+      {/* <StarRating rating={2} /> */}
       {/* <Select values={choices} selected='lime' callback={(val) => console.log('component ' + val)} /> */}
       {/* <CountdownTimer seconds={10}/> */}
       {/* <TreeView data={treeData} name='data'/> */}
