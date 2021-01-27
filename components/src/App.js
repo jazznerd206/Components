@@ -1,7 +1,7 @@
 import './App.css';
+import SideNav from './SideNav/SideNav.js';
 import Registration from './Auth/RegistrationForm.js'
 import ParaLanding from './ParaLanding/ParaLanding.js';
-import SideNav from './SideNav/SideNav.js';
 import StackView from './StackViewer/StackView.js';
 import DragDrop from './DragDrop/DragDrop.js';
 import MappedTable from './MappedTable/MappedTable.js';
@@ -19,6 +19,7 @@ import StarRating from './StarRating/StarRating';
 import Input from './Input/Input';
 import Accordion from './Accordion/Accordion';
 import AccordionItem from './Accordion/AccordionItem';
+import Toggle from './Toggle/Toggle';
 
 // ===================================================
 // loader element
@@ -129,14 +130,15 @@ function App() {
       className="App" 
       >
       <SideNav />
-      <Accordion defaultIndex="1" onItemClick={console.log}>
+      <Toggle />
+      {/* <Accordion defaultIndex="1" onItemClick={console.log}>
         <AccordionItem label="First Tab" index="1">
           Lorem ipsum
         </AccordionItem>
         <AccordionItem label="Second Tab" index="2">
           Dolor sit amet
         </AccordionItem>
-      </Accordion>
+      </Accordion> */}
       {/* <Input type='text' placeholder='Insert some text here...' callback={(val) => console.log(val)}/> */}
       {/* <StarRating /> */}
       {/* <StarRating rating={2} /> */}
