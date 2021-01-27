@@ -16,7 +16,9 @@ import CountdownTimer from './CountdownTimer/CountdownTimer.js';
 import TreeView from './TreeView/TreeView.js';
 import Select from './Select/Select.js';
 import StarRating from './StarRating/StarRating';
-
+import Input from './Input/Input';
+import Accordion from './Accordion/Accordion';
+import AccordionItem from './Accordion/AccordionItem';
 
 // ===================================================
 // loader element
@@ -117,12 +119,25 @@ function App() {
   ];
   // ===================================================
 
+
+  // ===================================================
+  // ===================================================
+  // ===================================================
+
   return (
     <div 
       className="App" 
       >
       <SideNav />
-      <Input type='text' placeholder='Insert some text here...' callback={(val) => console.log(val)}/>
+      <Accordion defaultIndex="1" onItemClick={console.log}>
+        <AccordionItem label="First Tab" index="1">
+          Lorem ipsum
+        </AccordionItem>
+        <AccordionItem label="Second Tab" index="2">
+          Dolor sit amet
+        </AccordionItem>
+      </Accordion>
+      {/* <Input type='text' placeholder='Insert some text here...' callback={(val) => console.log(val)}/> */}
       {/* <StarRating /> */}
       {/* <StarRating rating={2} /> */}
       {/* <Select values={choices} selected='lime' callback={(val) => console.log('component ' + val)} /> */}
