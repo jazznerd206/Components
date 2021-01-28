@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Toggle(props) {
-    const [isToggleOn, setIsToggleOn] = React.useState(false);
+    const [isToggleOn, setIsToggleOn] = useState(false);
     const style = {
       on: {
         backgroundColor: "green"
