@@ -20,6 +20,7 @@ import Input from './Input/Input';
 import Accordion from './Accordion/Accordion';
 import AccordionItem from './Accordion/AccordionItem';
 import Toggle from './Toggle/Toggle';
+import MailTo from './MailTo/MailTo';
 
 // ===================================================
 // loader element
@@ -131,6 +132,9 @@ function App() {
       >
       <SideNav />
       <Toggle />
+      <MailTo email="206alm@gmail.com" subject="Hello" body="Hello world!">
+        Mail Me!
+      </MailTo>
       {/* <Accordion defaultIndex="1" onItemClick={console.log}>
         <AccordionItem label="First Tab" index="1">
           Lorem ipsum
