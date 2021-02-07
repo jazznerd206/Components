@@ -22,6 +22,7 @@ import AccordionItem from './Accordion/AccordionItem';
 import Toggle from './Toggle/Toggle';
 import MailTo from './MailTo/MailTo';
 import DataTable from './DataTable/DataTable';
+import AutoLink from './AutoLink/AutoLink';
 
 // ===================================================
 // loader element
@@ -80,8 +81,8 @@ function App() {
   ];
   // ===================================================
   // ===================================================
-  // PASSWORD REVEALER
-  const names = ['John', 'Paul', 'Mary'];
+  // DATA LIST PROPS
+  const names = ['John', 'Paul', 'Mary', 'Gabriel'];
   // ===================================================
 
   // ===================================================
@@ -125,7 +126,7 @@ function App() {
 
   // ===================================================
   // DATA TABLE PROPS
-  const dataTablePeople = ['John', 'Jesse'];
+  const dataTablePeople = ['John', 'Jesse', 'James', 'Jenkins'];
   // ===================================================
 
   return (
@@ -134,11 +135,11 @@ function App() {
       >
       <SideNav />
       <Toggle />
-      
+      {/* <AutoLink text='foo bar baz http://example.org bar' />, */}
       {/* <MailTo email="206alm@gmail.com" subject="Hello" body="Hello world!">
         Mail Me!
       </MailTo> */}
-      <DataTable data={dataTablePeople} />
+      {/* <DataTable data={dataTablePeople} /> */}
       {/* <Accordion defaultIndex="1" onItemClick={console.log}>
         <AccordionItem label="First Tab" index="1">
           Lorem ipsum
@@ -157,7 +158,7 @@ function App() {
         <h1>Hello world</h1>
         <p>Oye mundo.</p>
       </Collapse> */}
-      {/* <DataList data={names} /> */}
+      <DataList data={names} />
       {/* <Carousel carouselItems={carouselItems}/> */}
       {/* <FileDrop handleDrop={console.log}/> */}
       {/* <CustomModal  /> */}

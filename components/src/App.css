@@ -29,3 +29,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* zebra stripe list */
+ul {
+  list-style-type: none;
+}
+li:nth-child(odd) {
+  background-color: rgb(255,255,255,.25);
+}

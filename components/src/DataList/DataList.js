@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 function DataList({ isOrdered, data }) {
     const list = data.map((val, i) => (

@@ -1,0 +1,8 @@
+/* zebra stripe list */
+ul {
+    list-style-type: none;
+}
+li:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
