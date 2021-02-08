@@ -23,6 +23,8 @@ import Toggle from './Toggle/Toggle';
 import MailTo from './MailTo/MailTo';
 import DataTable from './DataTable/DataTable';
 import AutoLink from './AutoLink/AutoLink';
+import Slider from './Slider/Slider';
+import { useEffect, useState } from 'react';
 
 // ===================================================
 // loader element
@@ -129,13 +131,27 @@ function App() {
   const dataTablePeople = ['John', 'Jesse', 'James', 'Jenkins'];
   // ===================================================
 
+  // ===================================================
+  // SLIDER HOOKS
+  const [ value, setValue ] = useState(50);
+  // ===================================================
+
   return (
-    <div 
-      className="App" 
-      >
+    <div className="App" >
       <SideNav />
-      <Toggle />
+      <div className="flex-row">
+        <Toggle />
+        <div>
+          <h1>{value}</h1>
+          <Slider callback={val => setValue(val)} />
+        </div>
+      </div>
+      <div className="flex-row">
+      </div>
+      <div className="flex-row">
+      </div>
       {/* <AutoLink text='foo bar baz http://example.org bar' />, */}
+      {/* <DataList data={names} /> */}
       {/* <MailTo email="206alm@gmail.com" subject="Hello" body="Hello world!">
         Mail Me!
       </MailTo> */}
@@ -158,7 +174,6 @@ function App() {
         <h1>Hello world</h1>
         <p>Oye mundo.</p>
       </Collapse> */}
-      <DataList data={names} />
       {/* <Carousel carouselItems={carouselItems}/> */}
       {/* <FileDrop handleDrop={console.log}/> */}
       {/* <CustomModal  /> */}

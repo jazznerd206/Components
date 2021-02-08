@@ -4,10 +4,16 @@ function Toggle(props) {
     const [isToggleOn, setIsToggleOn] = useState(false);
     const style = {
       on: {
-        backgroundColor: "green"
+        backgroundColor: "green",
+        height: "6em",
+        width: '10em',
+        boxSizing: 'content-box'
       },
       off: {
-        backgroundColor: "grey"
+        backgroundColor: "grey",
+        height: "5em",
+        width: '8em',
+        boxSizing: 'content-box'
       }
     };
   

@@ -5,9 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Sriracha&display=swap');
 
 .App {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -21,6 +23,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.flex-row {
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 25vh;
+  width: 100vw;
+  flex: 0 0 100%;
+}
+
+.flex-row > * {
+  width: 25vw;
+}
+/* .row:nth-child(odd) {
+  background-color: rgb(255,255,255,.25);
+} */
+
 /* body::-webkit-scrollbar {
   display: none;
 } */
@@ -32,9 +51,9 @@ code {
 
 
 /* zebra stripe list */
-ul {
+/* ul {
   list-style-type: none;
 }
 li:nth-child(odd) {
   background-color: rgb(255,255,255,.25);
-}
+} */
