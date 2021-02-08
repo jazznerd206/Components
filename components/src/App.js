@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import SideNav from './SideNav/SideNav.js';
 import Registration from './Auth/RegistrationForm.js'
@@ -24,7 +25,7 @@ import MailTo from './MailTo/MailTo';
 import DataTable from './DataTable/DataTable';
 import AutoLink from './AutoLink/AutoLink';
 import Slider from './Slider/Slider';
-import { useEffect, useState } from 'react';
+import WebSocket from './WebSocket/WebSocket';
 
 // ===================================================
 // loader element
@@ -147,6 +148,7 @@ function App() {
         </div>
       </div>
       <div className="flex-row">
+          <WebSocket />
       </div>
       <div className="flex-row">
       </div>
