@@ -148,10 +148,10 @@ function App() {
         </div>
       </div>
       <div className="flex-row">
-          <WebSocket />
       </div>
       <div className="flex-row">
       </div>
+      {/* <WebSocket /> */}
       {/* <AutoLink text='foo bar baz http://example.org bar' />, */}
       {/* <DataList data={names} /> */}
       {/* <MailTo email="206alm@gmail.com" subject="Hello" body="Hello world!">
